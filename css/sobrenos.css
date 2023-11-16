@@ -2,6 +2,18 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+:root {
+  --lite_green: #979a2b;
+  --slime_green: #878c26;
+  --dark_green: #454d11;
+  --yellow: #eeb153;
+  --lite_yellow: #febd59;
+  --lite_orange: #eb8f32;
+  --orange: #c16100;
+  --past_orange: #ba5f04;
+  --dark_orange: #834105;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,7 +21,7 @@ body {
   flex-direction: column;
   width: auto;
   height: auto;
-  background: #febd59;
+  background: var(--lite_yellow);
 }
 
 /*
@@ -43,7 +55,7 @@ main {
   left: 15%;
 }
 #detalheSuperior {
-  background-color: #febd59;
+  background-color: var(--lite_yellow);
   padding: 0 0 1rem 0;
 }
 #detalheSuperior > img {
@@ -54,7 +66,7 @@ main {
 #detalheSuperior > h2 {
   margin: 0;
   padding: 0;
-  color: #ba5f04;
+  color: var(--past_orange);
   text-align: center;
   font-family: Poppins;
   font-size: 65px;
@@ -68,7 +80,7 @@ main {
 }
 
 #detalheInferior {
-  background-color: #febd59;
+  background-color: var(--lite_yellow);
   padding: 0;
   display: flex;
   flex-direction: column-reverse;
@@ -129,7 +141,7 @@ main {
   left: 20%;
 }
 .ladoEsquerdo {
-  background-color: #ba5f04;
+  background-color: var(--past_orange);
   position: relative;
 }
 .conteiner-text {
@@ -138,20 +150,20 @@ main {
   width: 50%;
 }
 .titulo-esq {
-  color: #febd59;
+  color: var(--lite_yellow);
   text-align: center;
   font-family: Poppins;
   font-size: 65px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-left: solid 8px #834105;
+  border-left: solid 8px var(--dark_orange);
   margin-bottom: 0;
   text-align: center;
   z-index: 1;
 }
 .texto-esq {
-  color: #febd59;
+  color: var(--lite_yellow);
   font-family: Lato;
   font-size: 19px;
   font-style: normal;
@@ -161,7 +173,7 @@ main {
   z-index: 1;
 }
 .texto-esq span {
-  color: #febd59;
+  color: var(--lite_yellow);
   text-align: center;
   font-family: Lato;
   font-size: 19px;
@@ -171,25 +183,25 @@ main {
 }
 
 .ladoDireito {
-  background-color: #febd59;
+  background-color: var(--lite_yellow);
   flex-direction: row-reverse;
   position: relative;
 }
 .titulo-dir {
-  color: #ba5f04;
+  color: var(--past_orange);
   text-align: center;
   font-family: Poppins;
   font-size: 65px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  border-right: solid 8px #834105;
+  border-right: solid 8px var(--dark_orange);
   margin-bottom: 0;
   text-align: center;
   z-index: 1;
 }
 .texto-dir {
-  color: #ba5f04;
+  color: var(--past_orange);
   font-family: Lato;
   font-size: 19px;
   font-style: normal;
@@ -199,7 +211,7 @@ main {
   z-index: 1;
 }
 .texto-dir span {
-  color: #ba5f04;
+  color: var(--past_orange);
   text-align: center;
   font-family: Lato;
   font-size: 19px;

@@ -1,6 +1,18 @@
+:root {
+  --lite_green: #979a2b;
+  --slime_green: #878c26;
+  --dark_green: #454d11;
+  --yellow: #eeb153;
+  --lite_yellow: #febd59;
+  --lite_orange: #eb8f32;
+  --orange: #c16100;
+  --past_orange: #ba5f04;
+  --dark_orange: #834105;
+}
+
 header {
-  border-bottom: 2px solid #ba5f04;
-  background: #454d11;
+  border-bottom: 2px solid var(--past_orange);
+  background: var(--dark_green);
   width: auto;
   height: 66px;
   display: flex;
@@ -31,7 +43,7 @@ a {
   color: white;
 }
 a:hover {
-  color: #eb8f32;
+  color: var(--lite_orange);
 }
 button {
   border-width: 0px;
@@ -43,7 +55,7 @@ button {
 }
 #Btn1 {
   border-radius: 5px;
-  background: #ba5f04;
+  background: var(--past_orange);
   width: 120px;
   height: 22px;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
@@ -55,9 +67,9 @@ button {
 
 #Btn2 {
   border-radius: 5px;
-  background: #454d11;
+  background: var(--dark_green);
   border-width: 1px;
-  border-color: #ba5f04;
+  border-color: var(--past_orange);
   width: 70px;
   height: 22px;
   filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.5));
@@ -66,9 +78,10 @@ button {
   margin: 34px;
 }
 
+
 footer {
   height: 191px;
-  background: #ba5f04;
+  background: var(--past_orange);
   z-index: 5;
 }
 
@@ -83,7 +96,7 @@ footer {
 
 #listFoo {
   margin: 16px 172px;
-  background: #834105;
+  background: var(--dark_orange);
   border-radius: 8px;
   display: flex;
   align-items: center;

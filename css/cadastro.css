@@ -2,6 +2,19 @@
 
 @import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+
+:root {
+  --lite_green: #979a2b;
+  --slime_green: #878c26;
+  --dark_green: #454d11;
+  --yellow: #eeb153;
+  --lite_yellow: #febd59;
+  --lite_orange: #eb8f32;
+  --orange: #c16100;
+  --past_orange: #ba5f04;
+  --dark_orange: #834105;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -9,7 +22,7 @@ body {
   flex-direction: column;
   width: 100%;
   height: auto;
-  background: #ba5f04;
+  background: var(--past_orange);
 }
 header {
   display: flex;
@@ -26,7 +39,7 @@ header button {
 #BtnV {
   border-radius: 5px;
   border-width: 2px;
-  border-color: #febd59;
+  border-color: var(--lite_yellow);
   background: rgba(186, 95, 4, 0);
   padding: 1% 0;
   width: 10%;
@@ -55,12 +68,12 @@ main h1 {
   justify-content: center;
   width: 80%;
   height: 80%;
-  border: 2px solid #febd59;
+  border: 2px solid var(--lite_yellow);
   border-radius: 22px;
   padding: 0% 5% 0% 5%;
 }
 form {
-  color: #febd59;
+  color: var(--lite_yellow);
   margin: auto;
   display: flex;
   flex-direction: column;
@@ -81,8 +94,8 @@ form {
   width: 80%;
   height: 6vh;
   border-radius: 14px;
-  border: 2px solid #834105;
-  background-color: #834105;
+  border: 2px solid var(--dark_orange);
+  background-color: var(--dark_orange);
 }
 .label-input label {
   padding: 0 0 0 2%;
@@ -95,7 +108,7 @@ form {
   justify-content: space-between;
 }
 .label-check label {
-  color: #5c2e05;
+  color: var(--lite_yellow);
   text-align: center;
   font-family: Lato;
   font-size: 19px;
@@ -103,6 +116,7 @@ form {
   font-weight: 300;
   line-height: normal;
   text-decoration-line: underline;
+
 }
 .label-check input {
   color: #5c2e05;
@@ -127,7 +141,7 @@ form {
   height: 8vh;
   border-radius: 14px;
   border: none;
-  color: #ba5f04;
+  color: var(--past_orange);
   text-align: center;
   font-family: Poppins;
   font-size: 16px;
@@ -136,6 +150,6 @@ form {
   line-height: normal;
 }
 #cadastrarBtn {
-  background: #febd59;
+  background: var(--lite_yellow);
   font-size: 21px;
 }
